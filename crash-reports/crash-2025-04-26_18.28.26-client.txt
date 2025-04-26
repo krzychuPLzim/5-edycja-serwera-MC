@@ -1,0 +1,399 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2025-04-26 18:28:26
+Description: mouseClicked event handler
+
+java.lang.IllegalArgumentException: Can't find weapon type: efbs-chakram
+	at yesman.epicfight.world.capabilities.item.WeaponCapabilityPresets.get(WeaponCapabilityPresets.java:365) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at yesman.epicfight.api.data.reloader.ItemCapabilityReloadListener.deserializeWeapon(ItemCapabilityReloadListener.java:146) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at yesman.epicfight.api.data.reloader.ItemCapabilityReloadListener.apply(ItemCapabilityReloadListener.java:84) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at yesman.epicfight.api.data.reloader.ItemCapabilityReloadListener.m_5787_(ItemCapabilityReloadListener.java:46) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,re:classloading,pl:mixin:APP:moonlight.mixins.json:ConditionsHackMixin,pl:mixin:A}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:157) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:131) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:140) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.gui.screens.worldselection.CreateWorldScreen.m_232896_(CreateWorldScreen.java:124) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:runtimedistcleaner:A,re:computing_frames,pl:runtimedistcleaner:A,re:classloading,pl:mixin:APP:aether.mixins.json:client.CreateWorldScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList.m_233213_(WorldSelectionList.java:147) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList.<init>(WorldSelectionList.java:90) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.SelectWorldScreen.m_7856_(SelectWorldScreen.java:65) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.Screen.m_232761_(Screen.java:421) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:cold_sweat.mixin.json:MixinChatClicked,pl:mixin:APP:byg.mixins.json:access.client.ScreenAccess,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_6575_(Screen.java:411) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:cold_sweat.mixin.json:MixinChatClicked,pl:mixin:APP:byg.mixins.json:access.client.ScreenAccess,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91152_(Minecraft.java:974) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.TitleScreen.m_96775_(TitleScreen.java:159) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.TitleScreenMixin,pl:mixin:APP:aether.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:citadel.mixins.json:client.TitleScreenMixin,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:obscure_api.mixins.json:client.TitleScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.Button.m_5691_(Button.java:43) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.gui.components.AbstractButton.m_5716_(AbstractButton.java:16) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,re:computing_frames,re:classloading}
+	at net.minecraft.client.gui.components.AbstractWidget.m_6375_(AbstractWidget.java:110) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.AbstractWidgetAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.m_6375_(ContainerEventHandler.java:27) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.client.gui.screens.TitleScreen.m_6375_(TitleScreen.java:368) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.TitleScreenMixin,pl:mixin:APP:aether.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:citadel.mixins.json:client.TitleScreenMixin,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:obscure_api.mixins.json:client.TitleScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168084_(MouseHandler.java:88) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:522) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:cold_sweat.mixin.json:MixinChatClicked,pl:mixin:APP:byg.mixins.json:access.client.ScreenAccess,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:103) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar%23145!/:build 7] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar%23137!/:build 7] {}
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar%23145!/:build 7] {}
+	at com.mojang.blaze3d.systems.RenderSystem.m_69495_(RenderSystem.java:197) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,re:classloading,pl:mixin:APP:flywheel.mixins.json:RenderTexturesMixin,pl:mixin:A}
+	at com.mojang.blaze3d.platform.Window.m_85435_(Window.java:337) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading,pl:runtimedistcleaner:A,re:mixin,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1143) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:700) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.m_239872_(Main.java:212) ~[forge-43.5.0.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-43.5.0.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:27) ~[fmlloader-1.19.2-43.5.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mod: 
+	Epic Fight (epicfight), Version: 19.5.26
+		at TRANSFORMER/epicfight@19.5.26/yesman.epicfight.world.capabilities.item.WeaponCapabilityPresets.get(WeaponCapabilityPresets.java:365)
+Stacktrace:
+	at yesman.epicfight.world.capabilities.item.WeaponCapabilityPresets.get(WeaponCapabilityPresets.java:365) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at yesman.epicfight.api.data.reloader.ItemCapabilityReloadListener.deserializeWeapon(ItemCapabilityReloadListener.java:146) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at yesman.epicfight.api.data.reloader.ItemCapabilityReloadListener.apply(ItemCapabilityReloadListener.java:84) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at yesman.epicfight.api.data.reloader.ItemCapabilityReloadListener.m_5787_(ItemCapabilityReloadListener.java:46) ~[epicfight-forge-19.5.26-1.19.2.jar%23354!/:19.5.26] {re:classloading}
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,re:classloading,pl:mixin:APP:moonlight.mixins.json:ConditionsHackMixin,pl:mixin:A}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:157) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:131) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:140) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.gui.screens.worldselection.CreateWorldScreen.m_232896_(CreateWorldScreen.java:124) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:runtimedistcleaner:A,re:computing_frames,pl:runtimedistcleaner:A,re:classloading,pl:mixin:APP:aether.mixins.json:client.CreateWorldScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList.m_233213_(WorldSelectionList.java:147) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList.<init>(WorldSelectionList.java:90) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.SelectWorldScreen.m_7856_(SelectWorldScreen.java:65) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.Screen.m_232761_(Screen.java:421) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:cold_sweat.mixin.json:MixinChatClicked,pl:mixin:APP:byg.mixins.json:access.client.ScreenAccess,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_6575_(Screen.java:411) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:cold_sweat.mixin.json:MixinChatClicked,pl:mixin:APP:byg.mixins.json:access.client.ScreenAccess,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91152_(Minecraft.java:974) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.TitleScreen.m_96775_(TitleScreen.java:159) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.TitleScreenMixin,pl:mixin:APP:aether.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:citadel.mixins.json:client.TitleScreenMixin,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:obscure_api.mixins.json:client.TitleScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.Button.m_5691_(Button.java:43) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.gui.components.AbstractButton.m_5716_(AbstractButton.java:16) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,re:computing_frames,re:classloading}
+	at net.minecraft.client.gui.components.AbstractWidget.m_6375_(AbstractWidget.java:110) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.AbstractWidgetAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.m_6375_(ContainerEventHandler.java:27) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.client.gui.screens.TitleScreen.m_6375_(TitleScreen.java:368) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.TitleScreenMixin,pl:mixin:APP:aether.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:citadel.mixins.json:client.TitleScreenMixin,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.TitleScreenAccessor,pl:mixin:APP:obscure_api.mixins.json:client.TitleScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168084_(MouseHandler.java:88) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:522) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:cold_sweat.mixin.json:MixinChatClicked,pl:mixin:APP:byg.mixins.json:access.client.ScreenAccess,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:103) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar%23145!/:build 7] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar%23137!/:build 7] {}
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar%23145!/:build 7] {}
+	at com.mojang.blaze3d.systems.RenderSystem.m_69495_(RenderSystem.java:197) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,re:classloading,pl:mixin:APP:flywheel.mixins.json:RenderTexturesMixin,pl:mixin:A}
+-- Affected screen --
+Details:
+	Screen name: com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu
+Stacktrace:
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:522) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:cold_sweat.mixin.json:MixinChatClicked,pl:mixin:APP:byg.mixins.json:access.client.ScreenAccess,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:103) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:APP:epicfight.mixins.json:MixinMouseHandler,pl:mixin:APP:corgilib.mixins.json:client.MixinMouseHandler,pl:mixin:APP:create.mixins.json:accessor.MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar%23145!/:build 7] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar%23137!/:build 7] {}
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar%23145!/:build 7] {}
+	at com.mojang.blaze3d.systems.RenderSystem.m_69495_(RenderSystem.java:197) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,re:classloading,pl:mixin:APP:flywheel.mixins.json:RenderTexturesMixin,pl:mixin:A}
+	at com.mojang.blaze3d.platform.Window.m_85435_(Window.java:337) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading,pl:runtimedistcleaner:A,re:mixin,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1143) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:700) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.m_239872_(Main.java:212) ~[forge-43.5.0.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-43.5.0.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:27) ~[fmlloader-1.19.2-43.5.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Mod Resources
+Stacktrace:
+	at net.minecraft.client.ResourceLoadStateTracker.m_168562_(ResourceLoadStateTracker.java:49) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:classloading}
+	at net.minecraft.client.Minecraft.m_91354_(Minecraft.java:2287) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:717) ~[client-1.19.2-20220805.130853-srg.jar%23452!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftclient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:dungeons_libraries.mixins.json:MinecraftMixin,pl:mixin:APP:flywheel.mixins.json:PausedPartialTickAccessor,pl:mixin:APP:notenoughanimations.mixins.json:LivingRenderStateMixin,pl:mixin:APP:biomemusic.mixins.json:ClientMusicChoiceMixin,pl:mixin:APP:cold_sweat.mixin.json:MixinInventoryOpenClient,pl:mixin:APP:create.mixins.json:client.WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.m_239872_(Main.java:212) ~[forge-43.5.0.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-43.5.0.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:27) ~[fmlloader-1.19.2-43.5.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.8.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.8, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 748683264 bytes (714 MiB) / 3751804928 bytes (3578 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+	Identifier: Intel64 Family 6 Model 167 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 2.59
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce RTX 3060
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2504
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.7270
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 2.40
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.67
+	Memory slot #3 type: DDR4
+	Virtual memory max (MB): 82032.48
+	Virtual memory used (MB): 35055.20
+	Swap memory total (MB): 49427.02
+	Swap memory used (MB): 1616.93
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx4096m -Xms256m
+	Launched Version: forge-43.5.0
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 3.2.0 NVIDIA 572.70, NVIDIA Corporation
+	Window size: 1024x768
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 12x 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		cp_tweaks-1.0.7-1.19.2.jar                        |Create Planetary Tweaks       |cp_tweaks                     |1.0.7-1.19.2        |DONE      |Manifest: NOSIGNATURE
+		weaponmaster_ydm-forge-1.19.2-4.2.3.jar           |YDM's Weapon Master           |weaponmaster_ydm              |4.2.3               |DONE      |Manifest: NOSIGNATURE
+		YungsBetterDungeons-1.19.2-Forge-3.2.2.jar        |YUNG's Better Dungeons        |betterdungeons                |1.19.2-Forge-3.2.2  |DONE      |Manifest: NOSIGNATURE
+		supermartijn642configlib-1.1.8-forge-mc1.19.jar   |SuperMartijn642's Config Libra|supermartijn642configlib      |1.1.8               |DONE      |Manifest: NOSIGNATURE
+		YungsBetterWitchHuts-1.19.2-Forge-2.1.0.jar       |YUNG's Better Witch Huts      |betterwitchhuts               |1.19.2-Forge-2.1.0  |DONE      |Manifest: NOSIGNATURE
+		recipeessentials-1.19.2-3.5.jar                   |recipeessentials mod          |recipeessentials              |1.19.2-3.5          |DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2.jar              |Player Animator               |playeranimator                |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		aether-1.19.2-1.5.1-forge.jar                     |The Aether                    |aether                        |1.19.2-1.5.1-forge  |DONE      |Manifest: NOSIGNATURE
+		Galosphere-1.19.2-1.3.0-Forge.jar                 |Galosphere                    |galosphere                    |1.19.2-1.3.0        |DONE      |Manifest: NOSIGNATURE
+		YungsBetterOceanMonuments-1.19.2-Forge-2.1.1.jar  |YUNG's Better Ocean Monuments |betteroceanmonuments          |1.19.2-Forge-2.1.1  |DONE      |Manifest: NOSIGNATURE
+		aquaculture_delight_1.0.1_forge_1.19.2.jar        |Aquaculture Delight           |aquaculturedelight            |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		sophisticatedcore-1.19.2-0.6.4.730.jar            |Sophisticated Core            |sophisticatedcore             |1.19.2-0.6.4.730    |DONE      |Manifest: NOSIGNATURE
+		InsaneLib-1.7.5-mc1.19.2.jar                      |InsaneLib                     |insanelib                     |1.7.5               |DONE      |Manifest: NOSIGNATURE
+		create_recycle_1.0.2_forge_1.19.2.jar             |Create Recycling              |create_crush_everything       |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		structureessentials-1.19.2-3.2.jar                |Structure Essentials mod      |structureessentials           |1.19.2-3.2          |DONE      |Manifest: NOSIGNATURE
+		ritchiesprojectilelib-2.0.0-dev+mc.1.19.2-forge-bu|Ritchie's Projectile Library  |ritchiesprojectilelib         |2.0.0-dev+mc.1.19.2-|DONE      |Manifest: NOSIGNATURE
+		citadel-2.1.4-1.19.jar                            |Citadel                       |citadel                       |2.1.4               |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.21.1.jar                              |Alex's Mobs                   |alexsmobs                     |1.21.1              |DONE      |Manifest: NOSIGNATURE
+		lootintegrations-1.19.2-4.0.jar                   |Lootintegrations mod          |lootintegrations              |1.19.2-4.0          |DONE      |Manifest: NOSIGNATURE
+		YungsApi-1.19.2-Forge-3.8.10.jar                  |YUNG's API                    |yungsapi                      |1.19.2-Forge-3.8.10 |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.2.0-beta.9.jar                |MixinExtras                   |mixinextras                   |0.2.0-beta.9        |DONE      |Manifest: NOSIGNATURE
+		gravestonecurioscompat-1.18.x-1.20.x-Forge-2.1.0.j|gravestonecurioscompat        |gravestonecurioscompat        |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		galosphere_delight_1.1.0_forge_1.19.2.jar         |Galosphere Delight (by NoCube)|galosphere_delight            |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.19.2-16.3.20.jar                |Bookshelf                     |bookshelf                     |16.3.20             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		sophisticatedbackpacks-1.19.2-3.20.2.1035.jar     |Sophisticated Backpacks       |sophisticatedbackpacks        |1.19.2-3.20.2.1035  |DONE      |Manifest: NOSIGNATURE
+		HarderSpawners-1.19.2-43.2.24.1.jar               |Harder Spawners Mod           |harderspawners                |1.19.2-43.2.24.1    |DONE      |Manifest: NOSIGNATURE
+		ProgressiveBosses-3.7.6-mc1.19.2.jar              |Progressive Bosses            |progressivebosses             |3.7.6               |DONE      |Manifest: NOSIGNATURE
+		Rex's-AdditionalStructures-1.19.x-(v.4.0.4).jar   |Additional Structures         |additionalstructures          |4.0.4               |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.19.2-4.6.0.jar                       |Balm                          |balm                          |4.6.0               |DONE      |Manifest: NOSIGNATURE
+		YungsBetterNetherFortresses-1.19.2-Forge-1.0.6.jar|YUNG's Better Nether Fortresse|betterfortresses              |1.19.2-Forge-1.0.6  |DONE      |Manifest: NOSIGNATURE
+		dragonfight-1.19.2-4.4.jar                        |dragonfight mod               |dragonfight                   |1.19.2-4.4          |DONE      |Manifest: NOSIGNATURE
+		cloth-config-8.3.134-forge.jar                    |Cloth Config v8 API           |cloth_config                  |8.3.134             |DONE      |Manifest: NOSIGNATURE
+		twilightforest-1.19.2-4.2.1518-universal.jar      |The Twilight Forest           |twilightforest                |4.2.1518            |DONE      |Manifest: NOSIGNATURE
+		geophilic-1.19-2.0.0c.jar                         |Geophilic                     |geophilic                     |1.19-2.0.0c         |DONE      |Manifest: NOSIGNATURE
+		GeophilicReforged-v1.2.0.jar                      |Geophilic Reforged            |geophilic_reforged            |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		undergarden_delight_1.0.1_forge_1.19.2.jar        |Undergarden Delight           |undergardendelight            |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		structure_gel-1.19.2-2.7.3.jar                    |Structure Gel API             |structure_gel                 |2.7.3               |DONE      |Manifest: NOSIGNATURE
+		xaeros_waystones_compability-1.0.jar              |Xaero's Map - Waystones Compab|w2w2                          |1.0                 |DONE      |Manifest: NOSIGNATURE
+		FarmersDelight-1.19.2-1.2.4.jar                   |Farmer's Delight              |farmersdelight                |1.19.2-1.2.4        |DONE      |Manifest: NOSIGNATURE
+		endsdelight-1.19.2-1.2.1.jar                      |End's Delight                 |ends_delight                  |1.19.2-1.2.1        |DONE      |Manifest: NOSIGNATURE
+		repurposed_structures_forge-6.3.29+1.19.2.jar     |Repurposed Structures         |repurposed_structures         |6.3.29+1.19.2       |DONE      |Manifest: NOSIGNATURE
+		chefs-delight-1.0.2-forge-1.19.2.jar              |Chefs Delight                 |chefsdelight                  |1.0.2-forge-1.19.2  |DONE      |Manifest: NOSIGNATURE
+		endersdelight-1.19-1.2.2.jar                      |Ender's Delight               |endersdelight                 |1.19-1.2.2          |DONE      |Manifest: NOSIGNATURE
+		Explorify v1.6.2 f10-48.jar                       |Explorify                     |explorify                     |1.6.2               |DONE      |Manifest: NOSIGNATURE
+		supermartijn642corelib-1.1.18-forge-mc1.19.2.jar  |SuperMartijn642's Core Lib    |supermartijn642corelib        |1.1.18              |DONE      |Manifest: NOSIGNATURE
+		YungsBridges-1.19.2-Forge-3.1.0.jar               |YUNG's Bridges                |yungsbridges                  |1.19.2-Forge-3.1.0  |DONE      |Manifest: NOSIGNATURE
+		lionfishapi-1.8.jar                               |LionfishAPI                   |lionfishapi                   |1.8                 |DONE      |Manifest: NOSIGNATURE
+		dungeons_enhanced-1.19.2-4.1.jar                  |Dungeons Enhanced             |dungeons_enhanced             |4.1                 |DONE      |Manifest: NOSIGNATURE
+		spartantoolkit-1.19.2-1.3.0.jar                   |Spartan Weaponry Addon Toolkit|spartantoolkit                |1.3.0               |DONE      |Manifest: NOSIGNATURE
+		[Universal]Immersive_Structure_Nether_v1.0.0b.jar |Immersive Structures:Nether ed|imst_n                        |1.0.0a              |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.19.2-5.1.6.4.jar                   |Curios API                    |curios                        |1.19.2-5.1.6.4      |DONE      |Manifest: NOSIGNATURE
+		createarmoryv0.6.jar                              |CreateArmory                  |createarmory                  |0.5                 |DONE      |Manifest: NOSIGNATURE
+		MyNethersDelight-1.19-1.7.jar                     |My Nether's Delight           |mynethersdelight              |1.19-1.7            |DONE      |Manifest: NOSIGNATURE
+		realmrpg_seadwellers_2.9.9_forge_1.19.2.jar       |Realm RPG: Sea Dwellers       |seadwellers                   |2.9.9               |DONE      |Manifest: NOSIGNATURE
+		YungsExtras-1.19.2-Forge-3.1.0.jar                |YUNG's Extras                 |yungsextras                   |1.19.2-Forge-3.1.0  |DONE      |Manifest: NOSIGNATURE
+		YungsBetterStrongholds-1.19.2-Forge-3.2.0.jar     |YUNG's Better Strongholds     |betterstrongholds             |1.19.2-Forge-3.2.0  |DONE      |Manifest: NOSIGNATURE
+		cumulus_menus-1.19.2-1.0.0-forge.jar              |Cumulus                       |cumulus_menus                 |1.19.2-1.0.0-forge  |DONE      |Manifest: NOSIGNATURE
+		SpartanWeaponry-1.19.2-3.0.7-all.jar              |Spartan Weaponry              |spartanweaponry               |3.0.7               |DONE      |Manifest: NOSIGNATURE
+		architectury-6.6.92-forge.jar                     |Architectury                  |architectury                  |6.6.92              |DONE      |Manifest: NOSIGNATURE
+		doapi-1.1.0b.jar                                  |Lets Do Api                   |doapi                         |1.1.0b              |DONE      |Manifest: NOSIGNATURE
+		tfmg-0.9.3-1.19.2.jar                             |Create: The Factory Must Grow |createindustry                |0.9.3-1.19.2        |DONE      |Manifest: NOSIGNATURE
+		cupboard-1.19.2-2.6.jar                           |Cupboard utilities            |cupboard                      |1.19.2-2.6          |DONE      |Manifest: NOSIGNATURE
+		YungsBetterEndIsland-1.19.2-Forge-1.0.jar         |YUNG's Better End Island      |betterendisland               |1.19.2-Forge-1.0    |DONE      |Manifest: NOSIGNATURE
+		The_Undergarden-1.19.2-0.8.3.jar                  |The Undergarden               |undergarden                   |0.8.3               |DONE      |Manifest: NOSIGNATURE
+		nitrogen_internals-1.19.2-1.0.7-forge.jar         |Nitrogen                      |nitrogen_internals            |1.19.2-1.0.7-forge  |DONE      |Manifest: NOSIGNATURE
+		l2library-1.10.0.jar                              |L2 Library                    |l2library                     |1.10.0              |DONE      |Manifest: NOSIGNATURE
+		Towns-and-Towers-v.1.10-_FORGE-1.19.2_.jar        |Towns and Towers              |t_and_t                       |1.10                |DONE      |Manifest: NOSIGNATURE
+		YungsBetterMineshafts-1.19.2-Forge-3.2.1.jar      |YUNG's Better Mineshafts      |bettermineshafts              |1.19.2-Forge-3.2.1  |DONE      |Manifest: NOSIGNATURE
+		dungeons_libraries-1.19.2-3.0.12-beta-all.jar     |Dungeons Libraries            |dungeons_libraries            |1.19.2-3.0.12-beta  |DONE      |Manifest: NOSIGNATURE
+		YungsBetterJungleTemples-1.19.2-Forge-1.0.1.jar   |YUNG's Better Jungle Temples  |betterjungletemples           |1.19.2-Forge-1.0.1  |DONE      |Manifest: NOSIGNATURE
+		createbigcannons-5.6.0-mc.1.19.2-forge.jar        |Create Big Cannons            |createbigcannons              |5.6.0+mc.1.19.2-forg|DONE      |Manifest: NOSIGNATURE
+		ftb-library-forge-1902.4.1-build.236.jar          |FTB Library                   |ftblibrary                    |1902.4.1-build.236  |DONE      |Manifest: NOSIGNATURE
+		ftb-teams-forge-1902.2.14-build.123.jar           |FTB Teams                     |ftbteams                      |1902.2.14-build.123 |DONE      |Manifest: NOSIGNATURE
+		biomemakeover-FORGE-1.19.2-1.6.4.jar              |Biome Makeover                |biomemakeover                 |1.19.2-1.6.4        |DONE      |Manifest: NOSIGNATURE
+		rechiseled-1.1.6-forge-mc1.19.2.jar               |Rechiseled                    |rechiseled                    |1.1.6               |DONE      |Manifest: NOSIGNATURE
+		item-filters-forge-1902.2.9-build.51.jar          |Item Filters                  |itemfilters                   |1902.2.9-build.51   |DONE      |Manifest: NOSIGNATURE
+		jei-1.19.2-forge-11.6.0.1019.jar                  |Just Enough Items             |jei                           |11.6.0.1019         |DONE      |Manifest: NOSIGNATURE
+		AttributeFix-Forge-1.19.2-17.2.8.jar              |AttributeFix                  |attributefix                  |17.2.8              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		dungeons_mobs-1.19.2-4.0.8-beta.jar               |Dungeons Mobs                 |dungeons_mobs                 |1.19.2-4.0.8-beta   |DONE      |Manifest: NOSIGNATURE
+		WeaponsOfMiracles-19.1.7.37.jar                   |Weapons of Minecraft          |wom                           |19.1.7.37           |DONE      |Manifest: NOSIGNATURE
+		l2complements-1.4.9.jar                           |L2 Complements                |l2complements                 |1.4.9               |DONE      |Manifest: NOSIGNATURE
+		l2weaponry-1.2.6.jar                              |L2 Weaponry                   |l2weaponry                    |1.2.6               |DONE      |Manifest: NOSIGNATURE
+		Mekanism-1.19.2-10.3.9.13.jar                     |Mekanism                      |mekanism                      |10.3.9              |DONE      |Manifest: NOSIGNATURE
+		MekanismWeapons-1.19.2-1.5.jar                    |Mekanism: Weapons             |mekaweapons                   |1.5                 |DONE      |Manifest: NOSIGNATURE
+		caelus-forge-1.19.2-3.0.0.6.jar                   |Caelus API                    |caelus                        |1.19.2-3.0.0.6      |DONE      |Manifest: NOSIGNATURE
+		obscure_api-15.jar                                |Obscure API                   |obscure_api                   |15                  |DONE      |Manifest: NOSIGNATURE
+		Structory_Towers_1.19.3_v1.0.2.jar                |Structory: Towers             |structorytowers               |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		realmrpg_fallen_adventurers_1.0.3_forge_1.19.2.jar|Realm RPG: Fallen Adventurers |realmrpg_skeletons            |1.0.3               |DONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.19.2-11.4.2.jar                 |Waystones                     |waystones                     |11.4.2              |DONE      |Manifest: NOSIGNATURE
+		HarderBranchMining-1.19-1.41.0.14.jar             |Harder Branch Mining Mod      |harderbranchmining            |1.41.0.14           |DONE      |Manifest: NOSIGNATURE
+		falchionmoveset-19.5.1.jar                        |falchion moveset              |falchionmoveset               |19.5.1              |DONE      |Manifest: NOSIGNATURE
+		epicfight-forge-19.5.26-1.19.2.jar                |Epic Fight                    |epicfight                     |19.5.26             |DONE      |Manifest: NOSIGNATURE
+		Structory_1.19.3_v1.3.1a.jar                      |Structory                     |structory                     |1.3.1a              |DONE      |Manifest: NOSIGNATURE
+		integrated_api_forge-1.2.8+1.19.2.jar             |Integrated API                |integrated_api                |1.2.8+1.19.2        |DONE      |Manifest: NOSIGNATURE
+		comforts-forge-6.0.7+1.19.2.jar                   |Comforts                      |comforts                      |6.0.7+1.19.2        |DONE      |Manifest: NOSIGNATURE
+		NaturesCompass-1.19.2-1.10.0-forge.jar            |Nature's Compass              |naturescompass                |1.19.2-1.10.0-forge |DONE      |Manifest: NOSIGNATURE
+		SereneSeasons-1.19.2-8.1.0.24.jar                 |Serene Seasons                |sereneseasons                 |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		Decorative Blocks-forge-1.19.2-3.0.0.jar          |Decorative Blocks             |decorative_blocks             |3.0.0               |DONE      |Manifest: NOSIGNATURE
+		DungeonCrawl-1.19-2.3.12.jar                      |Dungeon Crawl                 |dungeoncrawl                  |2.3.12              |DONE      |Manifest: NOSIGNATURE
+		knightlib-forge-1.19.2-1.2.0.jar                  |Knight Lib                    |knightlib                     |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		rechiseledcreate-1.0.2-forge-mc1.19.jar           |Rechiseled: Create            |rechiseledcreate              |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		YungsBetterDesertTemples-1.19.2-Forge-2.2.2.jar   |YUNG's Better Desert Temples  |betterdeserttemples           |1.19.2-Forge-2.2.2  |DONE      |Manifest: NOSIGNATURE
+		iceandfire-1.19.2-2.1.13-beta-3.jar               |Ice and Fire                  |iceandfire                    |1.19.2-2.1.13+build.|DONE      |Manifest: NOSIGNATURE
+		questsadditions-1.19.2-1.4.2.jar                  |Quests Additions              |questsadditions               |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		farsight-1.19.2-3.6.jar                           |Farsight mod                  |farsight_view                 |1.19.2-3.6          |DONE      |Manifest: NOSIGNATURE
+		BOMD-Forge-1.19.2-1.0.6.jar                       |Bosses of Mass Destruction    |bosses_of_mass_destruction    |1.0.6               |DONE      |Manifest: NOSIGNATURE
+		fusion-1.2.7b-forge-mc1.19.2.jar                  |Fusion                        |fusion                        |1.2.7+b             |DONE      |Manifest: NOSIGNATURE
+		formations-1.0.3-forge-mc1.19.2.jar               |Formations                    |formations                    |1.0.3               |DONE      |Manifest: NOSIGNATURE
+		aether_delight_1.0.0_forge_1.19.2.jar             |Aether Delight                |aetherdelight                 |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.5.0-universal.jar                 |Forge                         |forge                         |43.5.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		spartantwilight-1.19.2-3.1.0.jar                  |Spartan Weaponry: Twilight For|spartantwilight               |3.1.0               |DONE      |Manifest: NOSIGNATURE
+		PossessiveMask-forge-1.19.2-1.2.jar               |ThePossessiveMask             |thepossessivemask             |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		AxesAreWeapons-1.7.3-forge-1.19.2.jar             |Axes Are Weapons              |axesareweapons                |1.7.3               |DONE      |Manifest: NOSIGNATURE
+		DungeonsArise-1.19.2-2.1.54-release.jar           |When Dungeons Arise           |dungeons_arise                |2.1.54-1.19.2       |DONE      |Manifest: NOSIGNATURE
+		client-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		EnchantmentDescriptions-Forge-1.19.2-13.0.14.jar  |EnchantmentDescriptions       |enchdesc                      |13.0.14             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		TerraBlender-forge-1.19.2-2.0.1.136.jar           |TerraBlender                  |terrablender                  |2.0.1.136           |DONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-1.19.2-17.1.1.162.jar               |Biomes O' Plenty              |biomesoplenty                 |17.1.1.162          |DONE      |Manifest: NOSIGNATURE
+		moonlight-1.19.2-2.3.7-forge.jar                  |Moonlight Library             |moonlight                     |1.19.2-2.3.7        |DONE      |Manifest: NOSIGNATURE
+		Necronomicon-Forge-1.4.2.jar                      |Necronomicon                  |necronomicon                  |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		ftb-quests-forge-1902.5.10-build.497.jar          |FTB Quests                    |ftbquests                     |1902.5.10-build.497 |DONE      |Manifest: NOSIGNATURE
+		another_furniture-forge-1.19.2-2.1.4.jar          |Another Furniture             |another_furniture             |1.19.2-2.1.4        |DONE      |Manifest: NOSIGNATURE
+		knightquest-1.8.4.jar                             |Knight Quest                  |knightquest                   |1.8.4               |DONE      |Manifest: NOSIGNATURE
+		From-The-Fog-1.19-v1.9.1-Forge-Fabric.jar         |From The Fog                  |watching                      |1.9.1               |DONE      |Manifest: NOSIGNATURE
+		spectrelib-forge-0.12.8+1.19.2.jar                |SpectreLib                    |spectrelib                    |0.12.8+1.19.2       |DONE      |Manifest: NOSIGNATURE
+		NethersDelight-1.19-3.1.jar                       |Nether's Delight              |nethersdelight                |1.19-3.1            |DONE      |Manifest: NOSIGNATURE
+		lootintegrations_yungs-1.3.jar                    |lootintegrations_yungs mod    |lootintegrations_yungs        |1                   |DONE      |Manifest: NOSIGNATURE
+		betterfpsdist-1.19.2-4.1.jar                      |betterfpsdist mod             |betterfpsdist                 |1.19.2-4.1          |DONE      |Manifest: NOSIGNATURE
+		notenoughanimations-forge-1.9.3-mc1.19.2.jar      |NotEnoughAnimations           |notenoughanimations           |1.9.3               |DONE      |Manifest: NOSIGNATURE
+		FarmersRespite-1.19-2.0.jar                       |Farmer's Respite              |farmersrespite                |1.19-2.0            |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.19.2-0.6.11-22.jar               |Flywheel                      |flywheel                      |0.6.11-22           |DONE      |Manifest: NOSIGNATURE
+		create-1.19.2-0.5.1.i.jar                         |Create                        |create                        |0.5.1.i             |DONE      |Manifest: NOSIGNATURE
+		createdeco-1.3.3-1.19.2.jar                       |Create Deco                   |createdeco                    |1.3.3-1.19.2        |DONE      |Manifest: NOSIGNATURE
+		create_crystal_clear-0.2.1-1.19.2.jar             |Create: Crystal Clear         |create_crystal_clear          |1.19.2-0.2.a        |DONE      |Manifest: NOSIGNATURE
+		createoreexcavation-1.19-1.2.3.jar                |Create Ore Excavation         |createoreexcavation           |1.2.3               |DONE      |Manifest: NOSIGNATURE
+		brutalbosses-1.19.2-6.8.jar                       |brutalbosses mod              |brutalbosses                  |1.19.2-6.8          |DONE      |Manifest: NOSIGNATURE
+		Xaeros_Minimap_25.2.0_Forge_1.19.1.jar            |Xaero's Minimap               |xaerominimap                  |25.2.0              |DONE      |Manifest: NOSIGNATURE
+		mes-1.3.1-1.19.2-forge.jar                        |Moog's End Structures         |mes                           |1.3.1-1.19.2-forge  |DONE      |Manifest: NOSIGNATURE
+		gravestone-forge-1.19.2-1.0.24.jar                |Gravestone Mod                |gravestone                    |1.19.2-1.0.24       |DONE      |Manifest: NOSIGNATURE
+		FarmersStructures-1.0.0-1.19.2.jar                |FarmersStructures             |farmers_structures            |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		EndlessBiomes 1.4s - 1.19.2 (Server-friendly).jar |EndlessBiomes                 |endlessbiomes                 |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		wits-1.1.0+1.19.2-forge.jar                       |WITS                          |wits                          |1.1.0+1.19.2-forge  |DONE      |Manifest: NOSIGNATURE
+		endofherobrine-1.19.2-1.0.8.2.jar                 |The End of Herobrine          |endofherobrine                |1.19.2-1.0.8.2      |DONE      |Manifest: NOSIGNATURE
+		mvs-4.1.4-1.19.2-forge.jar                        |Moog's Voyager Structures     |mvs                           |4.1.4-1.19.2-forge  |DONE      |Manifest: NOSIGNATURE
+		alexsdelight-1.4.1.jar                            |Alex's Delight                |alexsdelight                  |1.4.1               |DONE      |Manifest: NOSIGNATURE
+		biomemusic-1.19.2-2.2.jar                         |biomemusic mod                |biomemusic                    |1.19.2-2.2          |DONE      |Manifest: NOSIGNATURE
+		ColdSweat-2.3.12.jar                              |Cold Sweat                    |cold_sweat                    |2.3.12              |DONE      |Manifest: NOSIGNATURE
+		Oh_The_Biomes_You'll_Go-forge-1.19.2-2.0.1.6.jar  |Oh The Biomes You'll Go       |byg                           |2.0.1.6             |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.19-3.1.40.jar                    |GeckoLib                      |geckolib3                     |3.1.40              |DONE      |Manifest: NOSIGNATURE
+		CorgiLib-forge-1.19.2-1.0.0.34.jar                |CorgiLib                      |corgilib                      |1.0.0.34            |DONE      |Manifest: NOSIGNATURE
+		Aquaculture-1.19.2-2.4.17.jar                     |Aquaculture 2                 |aquaculture                   |1.19.2-2.4.17       |DONE      |Manifest: NOSIGNATURE
+		the_knocker-1.4.0-forge-1.19.2.jar                |The Knocker                   |the_knocker                   |1.4.0               |DONE      |Manifest: NOSIGNATURE
+		mns-1.0.1-1.19.2-forge.jar                        |Moog's Nether Structures      |mns                           |1.0.1-1.19.2-forge  |DONE      |Manifest: NOSIGNATURE
+		mavapi-1.1.1-mc1.19.2.jar                         |More Axolotl Variants API     |mavapi                        |1.1.1               |DONE      |Manifest: NOSIGNATURE
+		EFMCompat 19.2.0.jar                              |EFMCompat                     |efm_compat                    |2.0                 |DONE      |Manifest: NOSIGNATURE
+		create_structures_arise-156.29.28-forge-1.19.2.jar|Create: Structures Arise      |create_structures_arise       |156.29.28           |DONE      |Manifest: NOSIGNATURE
+		realmrpg_pots_and_mimics_1.0.2_forge_1.19.2.jar   |Realm RPG: Pots & Mimics      |pots_and_mimics               |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		createaddition-1.19.2-1.2.3.jar                   |Create Crafts & Additions     |createaddition                |1.19.2-1.2.3        |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: fd1d3e9f-8a88-4c88-a7b9-5487da22e98a
+	FML: 43.5
+	Forge: net.minecraftforge:43.5.0
+	Flywheel Backend: GL33 Instanced Arrays
